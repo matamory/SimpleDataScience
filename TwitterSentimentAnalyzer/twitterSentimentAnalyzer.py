@@ -14,7 +14,7 @@ msft_tweets = fetch_tweets("MSFT", max_results=20)
 
 def analyze_sentiment(tweets):
     sentiments = [TextBlob(tweet).sentiment.polarity for tweet in tweets]
-    return pandas.DataFrame({'Tweet':tweets, 'Sentiment':Sentiments})
+    return pandas.DataFrame({'Tweet': tweets, 'Sentiment': sentiments})
     
 msft_sentiment = analyze_sentiment(msft_tweets)
 
