@@ -25,8 +25,8 @@ def analyze_sentiment(tweets):
 googl_sentiment = analyze_sentiment(googl_tweets)
 msft_sentiment = analyze_sentiment(msft_tweets)
 
-print(googl_sentiments.head())
-print(msft_sentiments.head())
+print(googl_sentiment.head())
+print(msft_sentiment.head())
 
 # Determine average sentiment
 def summarize_sentiments(sentiments_df):
