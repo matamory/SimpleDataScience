@@ -19,3 +19,10 @@ def analyze_sentiment(tweets):
 msft_sentiment = analyze_sentiment(msft_tweets)
 
 print(msft_sentiments.head())
+
+
+def summarize_sentiments(sentiments_df):
+    avg_sentiment = sentiments_df['Sentiment'].mean()
+    return avg_sentiment
+    
+msft_avg_sentiment = summarize_sentiments(msft_sentiment)
